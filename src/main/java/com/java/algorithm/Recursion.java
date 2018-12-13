@@ -32,13 +32,17 @@ public class Recursion
      * @return
      */
     public static int getFactorial(int n){
-        return 0;
+        if (n == 0){
+            return 1;
+        }else{
+            return n*getFactorial(n-1);
+        }
     }
 
 
 
     public static void main(String args[]){
-        int a = Recursion.getFactorialFor(5);
+        int a = Recursion.getFactorial(5);
         System.out.println(a);
     }
 }
